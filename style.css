@@ -1,0 +1,541 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #0F172A;
+   
+}
+.custom-cursor {
+    position: absolute;
+    width: 100px; /* Diameter of the cursor */
+    height: 100px; /* Diameter of the cursor */
+    box-shadow: #576B94;
+
+    background: hsla(224, 59%, 16%, 1);
+
+    background: radial-gradient(circle, rgba(17, 30, 65, 0.306) 0%, rgba(67, 90, 152, 0.073) 100%);
+    
+    background: -moz-radial-gradient(circle, rgba(17, 30, 65, 0.306) 0%, rgba(67, 90, 152, 0.105) 100%);
+    
+    background: -webkit-radial-gradient(circle, rgba(17, 30, 65, 0.32) 0%, rgba(67, 90, 152, 0.064) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#111E41", endColorstr="#435A98", GradientType=1 );/* Red color with transparency */
+    border-radius: 50%; /* Make it a circle */
+    pointer-events: none; /* Ensure the cursor doesn't interfere with other elements */
+    transform: translate(-50%, -50%); /* Center the circle on the cursor */
+  }
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.left, .right {
+    flex: 1;
+    padding: 20px;
+}
+.left {
+    background-color: #0F172A;
+    color: #E2E8F0;
+    width: 50%;
+    height: 100%;
+}
+.right {
+    background-color: #0F172A;
+    color: #ffffff;
+    padding-top: 100px;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+   
+}
+.name h1 {
+    font-family: __inter_20b187 - 700;
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 600;
+    margin-top: 90px;
+    margin-left: 250px;
+}
+.name :hover {
+ color: #419EAA;
+}
+.prof h2 {
+    font-size: 20px;
+    font-weight: 50px;
+    margin-top: 10px;
+    margin-left: 250px;
+    font-family: __inter_20b187 - 500;
+}
+.me h2 {
+    
+    font-family:__inter_20b187, __inter_Fallback_20b187, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #8297BD;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-left: 250px;
+}
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: rgb(100, 116, 139);
+    margin: 10px;
+}
+#navel1, #navel2, #navel3 {
+    color: rgb(100, 116, 139);
+}
+.cont {
+    display: flex;
+    padding: 10px;
+}
+.navigation {
+    padding-top: 50px;
+    margin-left: 250px;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.about {
+    width: 650px;
+    height: 400px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #8297BD;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.proj {
+    margin-top: 100px;
+}
+.exp {
+    width: 650px;
+    margin-top: 40px;
+     display: flex;
+     flex-direction: column;
+}
+.expbox {
+    margin: 10px;
+    width: 530px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.epb1 {
+    font-size: 15px;
+    margin-top: 4px;
+    font-family: __inter_20b187 - 500;
+    color: #576B94;
+}
+.epb2 {
+    font-size: 20px;
+    margin-left: 150px;
+    margin-top: -27px;
+    color: #cfd6e5;
+}
+.epb3 {
+    width: 300px;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-top: 3px;
+    color: #7588AF;
+}
+.epb4 {
+    display: flex;
+    flex-direction:row;
+    margin-left: 10px;
+    margin-top: 30px;
+    width: 400;
+    height: 50px;
+}
+.epb1tech{
+    margin: 10px;
+    padding: 5px;
+   font-size: 11px;
+    border-radius: 10px;
+    background-color: #183656;
+    color: #50C9CD;
+    text-align: center;
+}
+.expbox:hover {
+    background-color: #17264B;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    .epb2{
+        color: #419EAA;
+    }
+    .epb3{
+        color: #ffffff;
+    }
+}
+.project{ 
+    width: 650px;
+    display: flex;
+    flex-direction:column;
+    margin-top: 50px;
+}
+.pr1{
+    width: 570px;
+    height: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.pr1:hover{
+    background-color: #17264B;
+    img{
+        border: 2px solid white;
+    }
+    .prod1
+    {
+        color: #419EAA;
+    }
+    .prod2
+    {
+        color: #ffffff;
+    }
+}
+.propic{
+    width: 153px;
+    height: 83px;
+    border:  2px solid rgb(0, 0, 0);
+    margin: 10px;
+    margin-top: 50px;
+}
+.prodet{
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    margin-top: 50px; 
+}
+img{
+    width: 150px;
+    height: 80px;
+}
+.prod2{
+    color: #7588AF;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.prod1{
+    font-size: 20px;
+    color: #cfd6e5;
+
+}
+.icon{
+    width:max-content;
+    margin-left:250px;
+    margin-top: 10px;
+   
+}
+i:hover{
+ background-color: #60ced23e;
+ border-radius: 10px;
+}
+i{
+    padding: 30px;  
+}
+.cvcoll{
+    width: max-content;
+    padding: 10px;
+    margin: 20px;
+    color: #50C9CD;
+}
+.cvcoll:hover{
+    color: red;
+}
+.main-form{
+    height: 100%;
+    width: 100%;
+    background-color:#8297BD;
+}
+@media (max-width: 1454px) {
+    .pr1
+    {
+        width: 550px;
+        
+    }
+    .exp{
+        width: 550px;
+      }
+      .icon{
+        margin-left: 230px;
+    }
+   
+}
+@media (max-width: 1414px) {
+    .name h1 {
+        margin-left: 200px;
+        padding-left: 0;
+        font-size: 40px;
+    }
+    .prof h2 {
+        margin-left: 200px;
+        padding-left: 0;
+        font-size: 20px;
+    }
+    .me h2 {
+        margin-left: 200px;
+        padding-left: 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .about
+      {
+        width: 550px;
+      }
+      .project
+    {
+    width: 560px;
+    }  
+  .navigation
+  {
+    margin-left: 200px;
+  } 
+  .icon{
+    margin-left: 190px;
+}
+}
+@media (max-width: 1300px) {
+    .main {
+        flex-direction: column;
+    }
+    .left
+    {
+        position:static;
+    }
+  .right{
+    overflow: visible;
+  }
+    .left, .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .name h1 {
+        margin-left: 0;
+        font-size: 80px;
+    }
+    .prof h2 {
+        margin-left: 0;
+        font-size: 30px;
+    }
+    .me h2 {
+        margin-left: 0;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .exp{
+        width: 1100px;
+        flex-direction: row;
+      }
+      .about
+      {
+        width: 1150px;
+      }
+      .project
+      {
+        width: 1200px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+      }  
+      .pr1{
+        flex: 1 0 auto;
+      } 
+      .navigation{
+        margin-left: 450px;
+      }
+   .icon{
+        margin-left: 370px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1200px) {
+    .left, .right {
+        width: 100%;
+        height: auto;
+    }
+    .left
+    {
+        position:static;
+    }
+  .right{
+    overflow: visible;
+  }
+    .name h1 {
+        margin-left: 0;
+        font-size: 80px;
+    }
+    .prof h2 {
+        margin-left: 0;
+        font-size: 40px;
+    }
+    .me h2 {
+        margin-left: 0;
+        font-size: 30px;
+        line-height: 40px;
+      }
+      .exp{
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+   .expbox
+   {
+    flex: 1 0 auto;
+    width: 480px;
+    height: auto;
+   }
+   .epb3
+   {
+    width: 250px;
+   }
+   .about
+   {
+     width: 1050px;
+   }
+   .project
+   {
+     width: 1100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }  
+   .pr1{
+    width: 400px ;
+  } 
+  .navigation
+  {
+      display:none;
+  } 
+  .icon{
+    margin-left: 0px;
+}
+}
+@media (max-width: 740px){
+    .pr1
+    {
+        width: 500px;
+    }
+    .main {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .right {
+        overflow: visible;
+    }
+
+    .name h1 {
+        font-size: 50px;
+    }
+    .prof h2 {
+        font-size: 30px;
+    }
+    .me h2 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .about {
+        font-size: 20px;
+    }
+    .project
+      {
+        width: 1000px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+      }  
+      .pr1{
+        flex: 1 0 auto;
+      } 
+}
+@media (max-width: 600px){
+    .pr1
+    {
+        width: 400px;
+    }
+    .project
+    {
+      width: 800px;
+     flex-direction: row;
+     flex-wrap: wrap;
+    }  
+
+    
+}
+@media (max-width: 500px){
+    .project{
+        align-items: center;
+        margin-left: 80px;
+    }
+    .exp{
+    flex-direction: column;
+    align-items: center;
+    }
+    .expbox
+    {
+        width: 800px;
+        margin-top: 150px
+    }
+    .epb1{
+        font-size: 20px;
+        
+    }
+    .epb2{
+        font-size: 26px;
+        margin-left: 190px;
+    }
+    .epb3{
+        width: 600px;
+        font-size: 26px;
+        margin-left: 190px;
+    }
+
+}
+@media (max-width: 448px){
+    .project
+    {
+        width: 900px;
+    }
+    .pr1
+    {
+        width: 550px;
+        height: 400px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .propic
+    { 
+        width: 307px;
+        height: 155px;
+        border: 3px solid rgb(255, 255, 255);
+    }
+    .prodet
+    {
+        width: 400px;
+        height: 400px;   
+    }
+    img{
+        width: 300px;
+        height: 150px;
+    }
+    .icon{
+        margin-left: 0px;
+    }
+    i{
+        margin-top: 40px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
